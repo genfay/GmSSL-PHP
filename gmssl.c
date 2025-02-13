@@ -507,7 +507,8 @@ PHP_FUNCTION(gmssl_sm2_key_generate)
 {
 	zend_string *ret;
 
-	ZEND_PARSE_PARAMETERS_NONE();
+	ZEND_PARSE_PARAMETERS_START(0, 0)
+	ZEND_PARSE_PARAMETERS_END();
 
 	ret = zend_string_alloc(sizeof(SM2_KEY), 0);
 
@@ -819,7 +820,8 @@ PHP_FUNCTION(gmssl_sm9_sign_master_key_generate)
 {
 	zend_string *ret;
 
-	ZEND_PARSE_PARAMETERS_NONE();
+	ZEND_PARSE_PARAMETERS_START(0, 0)
+	ZEND_PARSE_PARAMETERS_END();
 
 	ret = zend_string_alloc(sizeof(SM9_SIGN_MASTER_KEY), 0);
 
@@ -1136,7 +1138,8 @@ PHP_FUNCTION(gmssl_sm9_enc_master_key_generate)
 {
 	zend_string *ret;
 
-	ZEND_PARSE_PARAMETERS_NONE();
+	ZEND_PARSE_PARAMETERS_START(0, 0)
+	ZEND_PARSE_PARAMETERS_END();
 
 	ret = zend_string_alloc(sizeof(SM9_ENC_MASTER_KEY), 0);
 
